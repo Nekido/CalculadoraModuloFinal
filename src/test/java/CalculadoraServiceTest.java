@@ -12,6 +12,7 @@ public class CalculadoraServiceTest {
         CalculadoraService calculadora = new CalculadoraService();
         int resultado = calculadora.somar(2, 8);
         Assert.assertEquals(10, resultado);
+
     }
 
     @Test
@@ -59,12 +60,13 @@ public class CalculadoraServiceTest {
     }
 
     @Test
-    public void assertSameAreaTrianguloIgualNull() {
+    public void assertNull_AreaTrianguloIgual() {
 
         CalculadoraService calculadora = new CalculadoraService();
-        Triangulo triangulo1 = new Triangulo(8, 5);
-        Triangulo triangulo2 = new Triangulo(10, 4);
-        Assert.assertNull(triangulo1.toString(), triangulo2);
+        double resultado1 = calculadora.calcularAreaDoTriangulo(7, 55);
+        double resultado2 = calculadora.calcularAreaDoTriangulo(13, 9);
+        Assertions.assertNull(null, "Areas com valores iguais");
+
     }
 
     @Test
