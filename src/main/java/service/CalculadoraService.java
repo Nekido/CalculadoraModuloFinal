@@ -1,8 +1,9 @@
 package service;
 
+import model.Quadrado;
 import model.Triangulo;
 
-public class CalculadorService {
+public class CalculadoraService {
     public int somar(int a, int b) {
         return a + b;
     }
@@ -30,12 +31,6 @@ public class CalculadorService {
         double area = base * altura / 2;
         return area;
     }
-
-//    public ??? calcularArea() {
-//    }
-
-    // Caso seja de area igual, retorna null
-
     public double trianguloDeMenorArea(Triangulo triangulo1, Triangulo triangulo2) {
         double area1 = calcularAreaDoTriangulo(8,5);
         double area2 = calcularAreaDoTriangulo(12, 7);
@@ -48,14 +43,22 @@ public class CalculadorService {
             return Double.parseDouble(null);
         }
     }
+    public double quadradoDeMenorArea(Quadrado quadrado1, Quadrado quadrado2) {
 
+        double area1 = calcularAreaDoQuadrado(9);
+        double area2 = calcularAreaDoQuadrado(4);
 
+        if ( area1 < area2){
+            return area1;
 
+        } else if (area1 > area2){
+            return area2;
+        }else{
+            return Double.parseDouble(null);
+        }
+
+    }
 }
-//    public Triangulo trianguloDeMenorArea(Triangulo triangulo1, Triangulo triangulo2) {
-//    }
-//    public Quadrado quadradoDeMenorArea(Quadrado quadrado1, Quadrado quadrado2) {
-//    }
 
 
 
