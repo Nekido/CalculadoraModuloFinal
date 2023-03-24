@@ -37,21 +37,21 @@ public class CalculadoraServiceTest {
     }
 
     @Test
-    public void testCalcularAreaDoQuadrado() {
+    public void testeCalcularAreaDoQuadrado() {
         CalculadoraService calculadora = new CalculadoraService();
         double resultado = calculadora.calcularAreaDoQuadrado(9);
         Assertions.assertEquals(81, resultado);
     }
 
     @Test
-    public void testCalcularAreaDoTriangulo() {
+    public void testeCalcularAreaDoTriangulo() {
         CalculadoraService calculadora = new CalculadoraService();
         double resultado = calculadora.calcularAreaDoTriangulo(6, 8);
         Assertions.assertEquals(24, resultado);
     }
 
     @Test
-    public void testTrianguloDeMenorArea() {
+    public void testeTrianguloDeMenorArea() {
         CalculadoraService calculadora = new CalculadoraService();
         Triangulo triangulo1 = new Triangulo(8, 5);
         Triangulo triangulo2 = new Triangulo(4, 7);
@@ -70,7 +70,7 @@ public class CalculadoraServiceTest {
     }
 
     @Test
-    public void testQuadradoDeMenorArea() {
+    public void TesteQuadradoDeMenorArea() {
         CalculadoraService calculadora = new CalculadoraService();
         Quadrado quadrado1 = new Quadrado(9);
         Quadrado quadrado2 = new Quadrado(4);
