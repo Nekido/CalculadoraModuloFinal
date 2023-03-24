@@ -1,6 +1,7 @@
 package model;
 
-public class Triangulo {  private double base;
+public class Triangulo {
+    private double base;
     private double altura;
 
     public double getBase() {
@@ -20,4 +21,4 @@ public class Triangulo {  private double base;
     }
 }
 
-}
+

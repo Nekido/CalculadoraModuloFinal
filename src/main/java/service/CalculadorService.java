@@ -36,16 +36,16 @@ public class CalculadorService {
 
     // Caso seja de area igual, retorna null
 
-    public Triangulo trianguloDeMenorArea(Triangulo triangulo1, Triangulo triangulo2) {
-        double area1 = calcularAreaDoTriangulo(6, 5);
+    public double trianguloDeMenorArea(Triangulo triangulo1, Triangulo triangulo2) {
+        double area1 = calcularAreaDoTriangulo(8,5);
         double area2 = calcularAreaDoTriangulo(12, 7);
 
-        if (area1 == area2) {
-            return null;
-        } if (area1 < area2) {
+        if (area1 < area2) {
             return area1;
-        }else {
+        } if (area1 > area2) {
             return area2;
+        }else {
+            return Double.parseDouble(null);
         }
     }
 
